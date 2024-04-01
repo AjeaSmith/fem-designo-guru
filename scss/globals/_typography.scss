@@ -1,0 +1,27 @@
+@use "colors" as *;
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 600;
+	color: $text-white;
+}
+
+h1 {
+	line-height: 1em;
+	font-size: clamp(2rem, 1.4898rem + 2.1769vw, 3rem);
+}
+h2 {
+	line-height: 32px;
+	font-size: clamp(2rem, 1.7449rem + 1.0884vw, 2.5rem);
+}
+h3 {
+	line-height: 48px;
+	letter-spacing: 2px;
+	font-size: clamp(1.75rem, 1.3673rem + 1.6327vw, 2.5rem);
+}
+h4 {
+	line-height: 26px;
+	letter-spacing: 5px;
+	font-size: 1.25em;
+}

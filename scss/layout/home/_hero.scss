@@ -1,0 +1,83 @@
+@use "../../globals/colors" as *;
+
+.hero {
+	background: $bg-peach;
+	text-align: center;
+	color: $text-white;
+
+	&__wrapper {
+		display: grid;
+		grid-template-rows: auto 360px;
+		overflow: hidden;
+		background: url("../../../public/assets/home/desktop/bg-pattern-hero-home.svg")
+			no-repeat 0 100px;
+	}
+	&__title {
+		line-height: 36px;
+		font-weight: 500;
+	}
+
+	&__content {
+		padding-inline: 16px;
+		padding-block: 80px;
+	}
+
+	&__description {
+		padding-block: 24px;
+	}
+
+	&__button {
+		text-transform: uppercase;
+		font-weight: 500;
+		color: $text-grey;
+		letter-spacing: 1px;
+		border-radius: 8px;
+		padding-inline: 24px;
+		padding-block: 16px;
+		background-color: #ffffff;
+	}
+
+	&__image {
+		position: relative;
+		top: -180px;
+
+		img {
+			margin-inline: auto;
+			object-fit: none;
+			object-position: center top;
+		}
+	}
+}
+
+// Media Queries
+@media screen and (min-width: 768px) {
+	.hero {
+		width: min(1110px, 100% - 1.5rem * 2);
+		margin-inline: auto;
+
+		border-radius: 15px;
+		&__wrapper {
+			grid-template-rows: auto 375px;
+			background: url("../../../public/assets/home/desktop/bg-pattern-hero-home.svg")
+				no-repeat 183px 98px;
+		}
+		&__content {
+			padding-inline: 58px;
+			padding-top: 60px;
+			max-width: 60ch;
+		}
+
+		&__content,
+		&__description {
+			margin-inline: auto;
+		}
+
+		&__title {
+			line-height: 48px;
+		}
+
+		&__description {
+			max-width: 45ch;
+		}
+	}
+}
