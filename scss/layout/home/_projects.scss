@@ -1,1 +1,75 @@
+@use "../../globals/colors" as *;
 
+.projects {
+	margin-block: 160px;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
+	&__item-container {
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		gap: 30px;
+	}
+
+	// ** Something new ** a loop for project items to add background images and hover states.
+	@for $i from 1 through 3 {
+		&--bg#{$i} {
+			$image: "";
+			$hoverColor: rgba(231, 129, 107, 0.8);
+
+			@if $i == 1 {
+				$image: "image-web-design-large.jpg";
+			} @else if $i == 2 {
+				$image: "image-app-design.jpg";
+			} @else if $i == 3 {
+				$image: "image-graphic-design.jpg";
+			}
+
+			cursor: pointer;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url("../../../public/assets/home/desktop/#{$image}");
+
+			&:hover {
+				background-image: linear-gradient($hoverColor, $hoverColor),
+					url("../../../public/assets/home/desktop/#{$image}");
+			}
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-transform: uppercase;
+		text-align: center;
+		padding-block: 100px;
+		border-radius: 15px;
+		background-color: black;
+
+		h2 {
+			font-weight: 500;
+			margin-bottom: 24px;
+			letter-spacing: 2px;
+		}
+		a {
+			color: $text-white;
+			letter-spacing: 5px;
+			position: relative;
+		}
+	}
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+		p {
+			margin-right: 25px;
+		}
+	}
+}
