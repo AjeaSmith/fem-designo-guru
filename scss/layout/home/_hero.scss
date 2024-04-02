@@ -53,11 +53,13 @@
 		width: min(1110px, 100% - 1.5rem * 2);
 		margin-inline: auto;
 		border-radius: 15px;
-        
+
 		&__wrapper {
 			grid-template-rows: auto 375px;
-			background-position: right -100% top 51%;
+			background-size: contain;
+			background-position: right -176px top 92px;
 		}
+
 		&__content {
 			padding-inline: 58px;
 			padding-top: 60px;
@@ -78,6 +80,39 @@
 		}
 	}
 
-	@media screen and (min-width: 1110px) {
+	@media screen and (min-width: 1024px) {
+		text-align: left;
+		&__wrapper {
+			grid-template-columns: auto auto;
+			grid-template-rows: 640px;
+			background-position: right;
+		}
+		&__content {
+            padding-inline: 0;
+			padding-block: 145px;
+			padding-left: 96px;
+			padding-right: 0;
+            margin-inline: 0;
+		}
+		&__description {
+			max-width: 46ch;
+			margin-inline: 0;
+			padding-bottom: 40px;
+		}
+		&__image {
+			width: 100%;
+			height: 100%;
+			top: 0;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-position: center -34px;
+			}
+		}
+		&__button:hover {
+			background-color: $bg-peach-light;
+			color: $text-white;
+		}
 	}
 }
