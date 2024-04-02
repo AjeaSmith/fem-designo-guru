@@ -9,8 +9,9 @@
 		display: grid;
 		grid-template-rows: auto 360px;
 		overflow: hidden;
-		background: url("../../../public/assets/home/desktop/bg-pattern-hero-home.svg")
-			no-repeat 0 100px;
+		background-image: url("../../../public/assets/home/desktop/bg-pattern-hero-home.svg");
+		background-position: left 2% top 54%;
+		background-repeat: no-repeat;
 	}
 	&__title {
 		line-height: 36px;
@@ -47,19 +48,15 @@
 			object-position: center top;
 		}
 	}
-}
-
-// Media Queries
-@media screen and (min-width: 768px) {
-	.hero {
+	// Media Queries
+	@media screen and (min-width: 768px) {
 		width: min(1110px, 100% - 1.5rem * 2);
 		margin-inline: auto;
-
 		border-radius: 15px;
+        
 		&__wrapper {
 			grid-template-rows: auto 375px;
-			background: url("../../../public/assets/home/desktop/bg-pattern-hero-home.svg")
-				no-repeat 183px 98px;
+			background-position: right -100% top 51%;
 		}
 		&__content {
 			padding-inline: 58px;
@@ -79,5 +76,8 @@
 		&__description {
 			max-width: 45ch;
 		}
+	}
+
+	@media screen and (min-width: 1110px) {
 	}
 }
