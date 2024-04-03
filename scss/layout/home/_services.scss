@@ -1,0 +1,87 @@
+@use "../../globals/colors" as *;
+
+.testimonals {
+	position: relative;
+	&::before {
+		position: absolute;
+		top: 120px;
+		right: 0px;
+		width: 100%;
+		height: auto;
+		z-index: -1;
+		content: url("../../../public/assets/shared/desktop/bg-pattern-leaf.svg");
+		rotate: 180deg;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 30px;
+	}
+	&__item {
+		display: grid;
+		grid-template-rows: auto;
+		place-items: center;
+		text-align: center;
+
+		h4 {
+			color: $text-grey;
+			margin-top: 48px;
+			margin-bottom: 32px;
+		}
+		p {
+			line-height: 1.625rem;
+		}
+	}
+
+	&__image {
+		position: relative;
+	}
+	&__bg {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&--bg1 {
+		rotate: 0deg;
+	}
+	&--bg2 {
+		rotate: -90deg;
+	}
+	&--bg3 {
+		rotate: 90deg;
+	}
+
+	@media (max-width: 900px) {
+		&::before {
+			content: "";
+		}
+		&__wrapper {
+			flex-direction: column;
+			gap: 32px;
+		}
+		&__item {
+			text-align: left;
+			gap: 48px;
+			grid-template-columns: 1fr 1fr;
+			h4 {
+				margin-top: 0;
+				margin-bottom: 16px;
+			}
+		}
+	}
+	@media (max-width: 699px) {
+		&__wrapper {
+			gap: 80px;
+		}
+		&__item {
+			text-align: center;
+			grid-template-columns: none;
+			gap: 0px;
+			h4 {
+				margin-block: 32px;
+			}
+		}
+	}
+}
