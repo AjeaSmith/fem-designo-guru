@@ -1,0 +1,9 @@
+@use "../../globals/colors" as *;
+.footer {
+	&__CTA {
+		background-color: $bg-peach;
+	}
+	&__nav {
+		background-color: $bg-black;
+	}
+}

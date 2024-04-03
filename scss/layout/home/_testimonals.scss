@@ -2,6 +2,7 @@
 
 .testimonals {
 	position: relative;
+	margin-block: 160px;
 	&::before {
 		position: absolute;
 		top: 120px;
@@ -54,6 +55,7 @@
 	}
 
 	@media (max-width: 900px) {
+		margin-block: 120px;
 		&::before {
 			content: "";
 		}
