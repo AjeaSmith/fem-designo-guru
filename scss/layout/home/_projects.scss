@@ -45,6 +45,7 @@
 	&__item {
 		display: flex;
 		flex-direction: column;
+		gap: 24px;
 		justify-content: center;
 		text-transform: uppercase;
 		text-align: center;
@@ -52,12 +53,12 @@
 		border-radius: 15px;
 		background-color: black;
 
-		h2 {
+		h3 {
 			font-weight: 500;
-			margin-bottom: 24px;
 			letter-spacing: 2px;
 		}
 		a {
+			font-size: 15px;
 			color: $text-white;
 			letter-spacing: 5px;
 			position: relative;
@@ -140,6 +141,9 @@
 						url("../../../public/assets/home/mobile/#{$image}");
 				}
 			}
+		}
+		&__item {
+			gap: 11px;
 		}
 	}
 }
