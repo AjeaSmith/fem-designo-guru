@@ -119,5 +119,15 @@
 		&__item {
 			grid-template-columns: none;
 		}
+		&__content {
+			&:hover {
+				h4 {
+					color: $text-white;
+				}
+				cursor: pointer;
+				color: $text-white;
+				background-color: $bg-peach;
+			}
+		}
 	}
 }
