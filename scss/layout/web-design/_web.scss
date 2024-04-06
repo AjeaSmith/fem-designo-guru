@@ -22,3 +22,35 @@
 		}
 	}
 }
+
+.sites {
+	margin-block: 96px;
+	&__container {
+		display: grid;
+		grid-template-rows: repeat(auto, 1fr);
+		gap: 40px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		background-color: rgba(231, 129, 107, 0.1);
+		padding-block: 32px;
+		padding-inline: 29px;
+		text-align: center;
+		color: $text-grey;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		h4 {
+			color: $bg-peach;
+		}
+	}
+	img {
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+}
