@@ -1,7 +1,15 @@
 @forward "globals";
 @forward "layout";
 
-.container_wrapper {
-	width: min(1110px, 100% - 1.5rem * 2);
+// set container wrapper
+.full-container {
+	width: min(100%, 1110px);
 	margin-inline: auto;
+}
+.container {
+	width: min(100% - 1.5rem, 1110px);
+	margin-inline: auto;
+	@media (min-width: 768px) {
+		width: min(100% - 2.5rem * 2, 1110px); // 40px
+	}
 }

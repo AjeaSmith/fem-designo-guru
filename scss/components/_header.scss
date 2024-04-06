@@ -9,7 +9,7 @@
 		align-items: center;
 	}
 	&__logo {
-		width: 60%;
+		max-width: 202px;
 	}
 	&__toggle {
 		display: none;
@@ -40,7 +40,7 @@
 		white-space: nowrap; /* added line */
 		border: 0;
 	}
-	@media (max-width: 50em) {
+	@media (max-width: 42.5em) {
 		.navigation {
 			display: none;
 			position: fixed;
