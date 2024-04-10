@@ -1,12 +1,12 @@
-@use "../../globals/colors" as *;
-
-.testimonals {
+@use "../globals/colors" as *;
+.countries {
 	position: relative;
 	margin-block: 160px;
+	overflow-x: clip;
 	&::before {
 		position: absolute;
-		top: 120px;
-		right: 0px;
+		top: 50%;
+		right: -25%;
 		width: 100%;
 		height: auto;
 		z-index: -1;
@@ -18,6 +18,13 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: 30px;
+
+		@media (max-width: 900px) {
+			flex-direction: column;
+		}
+		@media (max-width: 699px) {
+			gap: 80px;
+		}
 	}
 	&__item {
 		display: grid;
@@ -30,8 +37,20 @@
 			margin-top: 48px;
 			margin-bottom: 32px;
 		}
-		p {
-			line-height: 1.625rem;
+		button {
+			font-weight: 500;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: $text-white;
+			border-radius: 8px;
+			background-color: $bg-peach;
+			padding-inline: 18px;
+			padding-block: 18px;
+
+			&:hover,
+			&:focus {
+				background-color: $bg-peach-light;
+			}
 		}
 	}
 
@@ -44,47 +63,21 @@
 		top: 0;
 		left: 0;
 	}
-	
+
 	&--bg1 {
-		rotate: 0deg;
+		rotate: 90deg;
 	}
 	&--bg2 {
-		rotate: -90deg;
+		rotate: -40deg;
 	}
 	&--bg3 {
-		rotate: 90deg;
+		rotate: -90deg;
 	}
 
 	@media (max-width: 900px) {
 		margin-block: 120px;
 		&::before {
 			content: "";
-		}
-		&__wrapper {
-			flex-direction: column;
-			gap: 32px;
-		}
-		&__item {
-			text-align: left;
-			gap: 48px;
-			grid-template-columns: 1fr 3fr;
-			h4 {
-				margin-top: 0;
-				margin-bottom: 16px;
-			}
-		}
-	}
-	@media (max-width: 699px) {
-		&__wrapper {
-			gap: 80px;
-		}
-		&__item {
-			text-align: center;
-			grid-template-columns: none;
-			gap: 0px;
-			h4 {
-				margin-block: 32px;
-			}
 		}
 	}
 }

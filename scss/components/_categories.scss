@@ -1,6 +1,7 @@
-@use "../../globals/colors" as *;
+@use "../globals/colors" as *;
 
-.projects {
+// categories for each page
+.category {
 	margin-block: 160px;
 	&__wrapper {
 		display: grid;
@@ -13,7 +14,7 @@
 		gap: 30px;
 	}
 
-	// ** Something new ** a loop for project items to add background images and hover states.
+	// ** Something new ** a loop for categories to add background images and hover states.
 	@for $i from 1 through 3 {
 		&--bg#{$i} {
 			$image: "";

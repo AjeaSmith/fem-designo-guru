@@ -1,0 +1,66 @@
+@use "../../globals/colors" as *;
+.about-header {
+	display: grid;
+	grid-template-areas:
+		"image"
+		"content";
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		padding-inline: 24px;
+		padding-block: 80px;
+		text-align: center;
+		grid-area: content;
+		background-image: url("../../../public/assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+		background-repeat: no-repeat;
+		background-position: top 26% right 1%;
+		background-color: $bg-peach;
+		color: $text-white;
+		h1 {
+			font-weight: 500;
+		}
+		p {
+			line-height: 25px;
+		}
+	}
+	picture {
+		grid-area: image;
+	}
+}
+
+.about-info {
+	display: grid;
+
+	grid-template-areas:
+		"image"
+		"content";
+
+	img {
+		grid-area: image;
+	}
+	&__content {
+		grid-area: content;
+		font-size: 15px;
+		text-align: center;
+		padding-inline: 24px;
+		padding-block: 80px;
+		background-color: rgba(253, 243, 240, 1);
+		background-image: url("../../../public/assets/shared/desktop/bg-pattern-three-circles.svg");
+		background-position: top 20% left;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		h2 {
+			font-weight: 500;
+			color: $bg-peach;
+		}
+	}
+}
+
+.last-info {
+	margin-bottom: 120px;
+}
