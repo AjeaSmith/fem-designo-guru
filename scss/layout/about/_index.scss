@@ -138,11 +138,26 @@
 }
 
 .last-info {
+	grid-template-areas: "content image";
 	margin-bottom: 120px;
+	picture img {
+		@media (min-width: 1024px) {
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
+		}
+	}
 	&__content {
 		@media (min-width: 768px) {
 			padding-top: 68px;
 			padding-bottom: 94px;
+		}
+		@media (min-width: 1024px) {
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+			border-bottom-left-radius: 15px;
+			border-top-left-radius: 15px;
 		}
 	}
 	@media (min-width: 1024px) {
