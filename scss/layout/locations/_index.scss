@@ -1,0 +1,53 @@
+@use "../../globals/colors" as *;
+.location-wrapper {
+	display: grid;
+	gap: 40px;
+	@media (min-width: 768px) {
+		gap: 120px;
+	}
+}
+.location {
+	@media (min-width: 768px) {
+		display: grid;
+		gap: 24px;
+		picture img {
+			border-radius: 15px;
+		}
+	}
+	&__content {
+		background-image: url("../../../public/assets/shared/desktop/bg-pattern-three-circles.svg");
+		background-repeat: no-repeat;
+		background-color: rgba(231, 129, 107, 0.1);
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		font-size: 15px;
+		text-align: center;
+		padding-inline: 24px;
+		padding-block: 80px;
+
+		h2 {
+			font-weight: 500;
+			color: $bg-peach;
+		}
+		@media (min-width: 768px) {
+			background-position: bottom 0 left;
+			padding-inline: 74px;
+			padding-block: 88px;
+			text-align: left;
+			border-radius: 15px;
+		}
+	}
+	&__address {
+		display: grid;
+		gap: 24px;
+		@media (min-width: 768px) {
+			grid-template-columns: 1fr 1fr;
+			gap: 0;
+		}
+	}
+}
+
+.uk {
+	margin-bottom: 120px;
+}
