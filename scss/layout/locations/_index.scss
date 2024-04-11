@@ -1,9 +1,13 @@
 @use "../../globals/colors" as *;
+
 .location-wrapper {
 	display: grid;
 	gap: 40px;
 	@media (min-width: 768px) {
 		gap: 120px;
+	}
+	@media (min-width: 768px) {
+		gap: 32px;
 	}
 }
 .location {
@@ -48,6 +52,45 @@
 	}
 }
 
+.canada, .uk {
+	@media (min-width: 1024px) {
+		display: grid;
+		grid-template-areas: "content image";
+		grid-template-columns: 2fr 1fr;
+		gap: 30px;
+		picture {
+			grid-area: image;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: right;
+			}
+		}
+		&__content {
+			grid-area: content;
+		}
+	}
+}
+.australia {
+	@media (min-width: 1024px) {
+		display: grid;
+		grid-template-areas: "image content";
+		grid-template-columns: 1fr 2fr;
+		gap: 30px;
+		picture {
+			grid-area: image;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__content {
+			grid-area: content;
+		}
+	}
+}
 .uk {
 	margin-bottom: 120px;
 }
