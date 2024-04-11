@@ -4,17 +4,17 @@
 
 // set container wrapper
 .full-container {
-	width: min(100%, 1110px);
+	width: min(100%, 1111px);
 	margin-inline: auto;
 	@media (min-width: 768px) {
-		width: min(100% - 2.5rem * 2, 1110px); // 40px
+		width: min(100% - 2.5rem * 2, 1111px); // 40px
 	}
 }
 .container {
-	width: min(100% - 1.5rem, 1110px);
+	width: min(100% - 1.5rem, 1111px);
 	margin-inline: auto;
 	@media (min-width: 768px) {
-		width: min(100% - 2.5rem * 2, 1110px); // 40px
+		width: min(100% - 2.5rem * 2, 1111px); // 40px
 	}
 }
 
