@@ -13,7 +13,7 @@
 		padding-block: 80px;
 		text-align: center;
 		grid-area: content;
-		background-image: url("../../../public/assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+		background-image: url("/assets/about/mobile/bg-pattern-hero-about-mobile.svg");
 		background-repeat: no-repeat;
 		background-position: top 26% right 1%;
 		background-color: $bg-peach;
@@ -31,7 +31,7 @@
 			}
 		}
 		@media (min-width: 768px) {
-			background-image: url("../../../public/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+			background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
 			gap: 32px;
 			padding-block: 64px;
 			padding-inline: 58px;
@@ -103,7 +103,7 @@
 		padding-inline: 24px;
 		padding-block: 80px;
 		background-color: rgba(253, 243, 240, 1);
-		background-image: url("../../../public/assets/shared/desktop/bg-pattern-three-circles.svg");
+		background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
 		background-position: top 20% left;
 		background-repeat: no-repeat;
 		display: flex;
