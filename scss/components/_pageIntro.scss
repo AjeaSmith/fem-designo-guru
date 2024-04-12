@@ -2,7 +2,7 @@
 
 // intro hero for each page
 .page-header {
-	background-image: url("../public/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+	background-image: url("../../public/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
 	background-repeat: no-repeat;
 	background-position: top 0 left 100%;
 	padding-block: 105px;
@@ -23,7 +23,7 @@
 		}
 	}
 	@media (min-width: 768px) {
-		background-image: url("../public/assets/web-design/desktop/bg-pattern-intro-web.svg");
+		background-image: url("../../public/assets/web-design/desktop/bg-pattern-intro-web.svg");
 		background-position: top 47% left 20%;
 		border-radius: 15px;
 		padding-block: 64px;
