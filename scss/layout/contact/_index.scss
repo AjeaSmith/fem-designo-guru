@@ -1,6 +1,6 @@
 @use "../../globals/colors" as *;
 .contact {
-	background-image: url("../../../public/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+	background-image: url("/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
 	background-repeat: no-repeat;
 	background-color: $bg-peach;
 	background-position: top left 20%;
@@ -9,7 +9,7 @@
 	padding-block: 72px;
 	@media (min-width: 768px) {
 		border-radius: 15px;
-		background-image: url("../../../public/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+		background-image: url("/assets/contact/desktop/bg-pattern-hero-desktop.svg");
 		background-position: top -62% right 190px;
 		padding-inline: 58px;
 	}

@@ -34,11 +34,11 @@
 			background-repeat: no-repeat;
 
 			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-				url("../../public/assets/home/desktop/#{$image}");
+				url("/assets/home/desktop/#{$image}");
 
 			&:hover {
 				background-image: linear-gradient($hoverColor, $hoverColor),
-					url("../../public/assets/home/desktop/#{$image}");
+					url("/assets/home/desktop/#{$image}");
 			}
 		}
 	}
@@ -103,11 +103,11 @@
 						rgba(0, 0, 0, 0.5),
 						rgba(0, 0, 0, 0.5)
 					),
-					url("../../public/assets/home/tablet/#{$image}");
+					url("/assets/home/tablet/#{$image}");
 
 				&:hover {
 					background-image: linear-gradient($hoverColor, $hoverColor),
-						url("../../public/assets/home/tablet/#{$image}");
+						url("/assets/home/tablet/#{$image}");
 				}
 			}
 		}
@@ -135,11 +135,11 @@
 						rgba(0, 0, 0, 0.5),
 						rgba(0, 0, 0, 0.5)
 					),
-					url("../../public/assets/home/mobile/#{$image}");
+					url("/assets/home/mobile/#{$image}");
 
 				&:hover {
 					background-image: linear-gradient($hoverColor, $hoverColor),
-						url("../../public/assets/home/mobile/#{$image}");
+						url("/assets/home/mobile/#{$image}");
 				}
 			}
 		}
