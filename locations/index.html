@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Design | Designo</title>
+    <title>Locations | Designo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400..500;1,100..900&display=swap"
@@ -16,97 +16,91 @@
     <!-- Header -->
     <header class="header container">
         <div class="header__wrapper">
-            <a href="/index.html"><img class="header__logo" src="assets/shared/desktop/logo-dark.png" alt="Designo"></a>
+            <a href="/index.html"><img class="header__logo" src="/assets/shared/desktop/logo-dark.png"
+                    alt="Designo"></a>
 
             <button class="header__toggle" aria-controls="primary-navigation" aria-expanded="false">
-                <img class="icon-hamburger" src="assets/shared/mobile/icon-hamburger.svg" alt="presentation"
+                <img class="icon-hamburger" src="/assets/shared/mobile/icon-hamburger.svg" alt="presentation"
                     aria-hidden="true" />
-                <img class="icon-close" src="assets/shared/mobile/icon-close.svg" alt="presentation"
+                <img class="icon-close" src="/assets/shared/mobile/icon-close.svg" alt="presentation"
                     aria-hidden="true" />
                 <span class="visually-hidden">Menu</span>
             </button>
 
             <nav class="navigation" id="navigation">
                 <ul aria-label="Primary" role="list" class="nav-list">
-                    <li><a href="/about.html">Our Company</a></li>
-                    <li><a href="/location.html">Locations</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/about/index.html">Our Company</a></li>
+                    <li><a href="/locations/index.html">Locations</a></li>
+                    <li><a href="/contact/index.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div id="overlay"></div>
 
+    <div id="overlay"></div>
     <!-- Main -->
     <main>
-        <section class="page-header full-container">
-            <div class="page-header__content">
-                <h1>App Design</h1>
-                <p>Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.</p>
-            </div>
-        </section>
-        <section class="sites container">
-            <div class="sites__container">
-                <div class="sites__item">
-                    <img src="./public/assets/app-design/desktop/image-airfilter.jpg" alt="presentation" />
-                    <div class="sites__content">
-                        <h4>Airfilter</h4>
-                        <p>Solving the problem of poor indoor air quality by filtering the air</p>
-                    </div>
-                </div>
-                <div class="sites__item">
-                    <img src="./public/assets/app-design/desktop/image-eyecam.jpg" alt="presentation" />
-                    <div class="sites__content">
-                        <h4>Eyecam</h4>
-                        <p>Product that lets you edit your favorite photos and videos at any time</p>
-                    </div>
-                </div>
-                <div class="sites__item">
-                    <img src="./public/assets/app-design/desktop/image-faceit.jpg" alt="presentation" />
-                    <div class="sites__content">
-                        <h4>Faceit</h4>
-                        <p>Get to meet your favorite internet superstar with the faceit app</p>
-                    </div>
-                </div>
-                <div class="sites__item">
-                    <img src="./public/assets/app-design/desktop/image-todo.jpg" alt="presentation" />
-                    <div class="sites__content">
-                        <h4>Todo</h4>
-                        <p>A todo app that features cloud sync with light and dark mode</p>
-                    </div>
-                </div>
-                <div class="sites__item">
-                    <img src="./public/assets/app-design/desktop/image-loopstudios.jpg" alt="presentation" />
-                    <div class="sites__content">
-                        <h4>Loopstudios</h4>
-                        <p>A VR experience app made for Loopstudios</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="location-wrapper full-container">
+            <section class="canada location">
+                <picture>
+                    <source srcset="/assets/locations/tablet/image-map-canada.png" media="(min-width: 768px)" />
 
-        <section class="category">
-            <div class="container">
-                <div class="category__wrapper">
-                    <!-- Category Items -->
-                    <div class="category__item category--bg2">
-                        <h3>Web Design</h3>
-                        <a href="/web-design.html" class="category__link">
-                            <p>View Projects</p>
-                            <img src="./public/assets/shared/desktop/icon-right-arrow.svg" alt="icon-right-arrow" />
-                        </a>
-                    </div>
-                    <div class="category__item category--bg3">
-                        <h3>Graphic Design</h3>
-                        <a href="/graphic-design.html" class="category__link">
-                            <p>View Projects</p>
-                            <img src="./public/assets/shared/desktop/icon-right-arrow.svg" alt="icon-right-arrow" />
-                        </a>
+                    <img src="/assets/locations/desktop/image-map-canada.png" alt="view of canada map"
+                        width="100%" />
+                </picture>
+                <div class="canada__content location__content">
+                    <h2>Canada</h2>
+                    <div class="location__address">
+                        <p><b>Designo Central Office</b><br>
+                            3886 Wellington Street <br>
+                            Toronto, Ontario M9C 3J5</p>
+                        <p><b>Contact</b> <br>
+                            P : +1 253-863-8967 <br>
+                            M : contact@designo.co</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="australia location">
+                <picture>
+                    <source srcset="/assets/locations/tablet/image-map-australia.png"
+                        media="(min-width: 768px)" />
+                    <img src="/assets/locations/desktop/image-map-australia.png" alt="view of australia map"
+                        width="100%" />
+                </picture>
+                <div class="australia__content location__content">
+                    <h2>Australia</h2>
+                    <div class="location__address">
+                        <p><b>Designo AU Office</b> <br>
+                            19 Balonne Street <br>
+                            New South Wales 2443</p>
+                        <p><b>Contact</b> <br>
+                            P : (02) 6720 9092 <br>
+                            M : contact@designo.au</p>
+                    </div>
+                </div>
+            </section>
+            <section class="uk location">
+                <picture>
+                    <source srcset="/public/assets/locations/tablet/image-map-uk.png" media="(min-width: 768px)" />
+
+                    <img src="/assets/locations/desktop/image-map-united-kingdom.png" alt="view of uk map"
+                        width="100%" />
+                </picture>
+                <div class="unitedkingdom__content location__content">
+                    <h2>United Kingdom</h2>
+                    <div class="location__address">
+                        <p><b>Designo UK Office</b> <br>
+                            13 Colorado Way <br>
+                            Rhyd-y-fro SA8 9GA</p>
+                        <p><b>Contact</b> <br>
+                            P : 078 3115 1400 <br>
+                            M : contact@designo.uk</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
+
     <!-- Footer -->
     <footer class="footer">
         <!-- Footer__CTA -->
@@ -135,19 +129,19 @@
             <div class="container">
                 <div class="footer__top">
                     <a class="footer__logo" href="/index.html">
-                        <img src="./assets/shared/desktop/logo-light.png" alt="designo" />
+                        <img src="/assets/shared/desktop/logo-light.png" alt="designo" />
                     </a>
                     <hr class="footer__rule footer--ruletop w-full mt-8 mb-6 border-dark-grey border-t-1 md:hidden" />
                     <nav class="footer__list">
                         <ul role="list">
                             <li>
-                                <a href="/about.html">Our Company</a>
+                                <a href="/about/index.html">Our Company</a>
                             </li>
                             <li>
-                                <a href="/locations.html">Locations</a>
+                                <a href="/locations/index.html">Locations</a>
                             </li>
                             <li>
-                                <a href="/contact.html">Contact</a>
+                                <a href="/contact/index.html">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -201,7 +195,8 @@
         </section>
 
     </footer>
-    <script type="module" src="main.js"></script>
+
+    <script type="module" src="../main.js"></script>
 </body>
 
 </html>
