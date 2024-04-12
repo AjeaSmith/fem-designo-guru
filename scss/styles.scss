@@ -27,4 +27,9 @@
 		top: 18%;
 		content: url("/assets/shared/desktop/bg-pattern-leaf.svg");
 	}
+	@media (max-width: 768px) {
+		&::before {
+			content: none;
+		}
+	}
 }

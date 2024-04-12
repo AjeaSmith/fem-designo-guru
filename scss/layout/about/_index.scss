@@ -138,7 +138,9 @@
 }
 
 .last-info {
-	grid-template-areas: "content image";
+	grid-template-areas:
+		"image"
+		"content";
 	margin-bottom: 120px;
 	picture img {
 		@media (min-width: 1024px) {
@@ -161,6 +163,7 @@
 		}
 	}
 	@media (min-width: 1024px) {
+		grid-template-areas: "content image";
 		margin-bottom: 160px;
 	}
 }
