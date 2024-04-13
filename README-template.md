@@ -64,7 +64,6 @@ Things I learned
 
 ## Author
 
-- Website - [Ajea Smith](https://www.your-site.com)
 - Frontend Mentor - [@ajeasmith](https://www.frontendmentor.io/profile/ajeasmith)
 - Twitter - [@ajeasmith](https://www.twitter.com/ajeasmith)
 
