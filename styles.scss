@@ -1,6 +1,6 @@
-@forward "globals";
-@forward "components";
-@forward "layout";
+@forward "./scss/globals";
+@forward "./scss/components";
+@forward "./scss/layout";
 
 // set container wrapper
 .full-container {
